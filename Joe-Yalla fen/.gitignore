@@ -1,0 +1,6 @@
+node_modules
+.idea
+*.rar
+package-lock\.json
+
+dist/**/*
