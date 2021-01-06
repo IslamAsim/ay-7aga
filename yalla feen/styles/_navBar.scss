@@ -1,0 +1,86 @@
+nav {
+  .nav-wrapper {
+    position: fixed;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1100;
+    .logo {
+    }
+    .mobile-list-icon {
+      cursor: pointer;
+      width: 23px;
+      height: 20px;
+      outline: none;
+      display: block;
+      transition: all 500ms;
+
+      div {
+        background-color: $menu-icon-color;
+        width: 23px;
+        height: 4px;
+        transition: transform 800ms, background-color 2s;
+
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+
+      &.menu-open {
+        .b {
+          display: none;
+        }
+
+        .a {
+          transform: rotate(45deg) translate(9px, 6px);
+          background-color: $light-color;
+        }
+
+        .c {
+          transform: rotate(-45deg) translateY(4px);
+          background-color: $light-color;
+        }
+      }
+    }
+  }
+
+  .menu-mobile-list {
+    left: 0;
+    top: 0;
+    padding-top: 120px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(-100%);
+    background-image: url('/images/shape.png');
+    background-repeat: no-repeat;
+   background-size: cover;
+    z-index: 1000;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+    &.active {
+      transform: translateY(0);
+    }
+
+    .item-style {
+      font-weight: 700;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      justify-content: center;
+      color: $light-color;
+
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+  }
+}
