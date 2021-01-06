@@ -1,7 +1,7 @@
 
-.container {
+.sign-up-component {
     form {
-        background-image: url("../images/Shape-1.png"), url("../images/Shape.png");
+        background-image: url("/images/Shape-1.png"), url("/images/Shape.png");
         background-repeat: no-repeat, no-repeat;
         background-position: left top, right top;
         background-size: contain, cover;
@@ -22,7 +22,7 @@
 
         button {
             border-radius: 25px;
-            background-image: url("../images/Rectangle 69.png");
+            background-image: url("/images/Rectangle 69.png");
             color: $menu-icon-color;
             background-position: top;
             background-repeat: no-repeat;

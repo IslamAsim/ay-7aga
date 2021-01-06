@@ -78,6 +78,14 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: "index.html",
 			template: path.resolve(__dirname,'./index.html')
+		}),
+		new HtmlWebpackPlugin({
+			filename: "sign_up.html",
+			template: path.resolve(__dirname,'./sign_up.html')
+		}),
+		new HtmlWebpackPlugin({
+			filename: "login.html",
+			template: path.resolve(__dirname,'./login.html')
 		})
 	],
 	// devtool: 'source-map', // ModySwitch
