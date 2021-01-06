@@ -1,13 +1,16 @@
 nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  top: 0;
+  z-index: 1000 ;
   .nav-wrapper {
-    position: fixed;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    z-index: 1100;
+    z-index: 100 ;
     .logo {
+      cursor: pointer;
     }
     .mobile-list-icon {
       cursor: pointer;
@@ -57,7 +60,7 @@ nav {
     background-image: url('/images/shape.png');
     background-repeat: no-repeat;
    background-size: cover;
-    z-index: 1000;
+    z-index: -100;
     transition: all 1s;
     display: flex;
     align-items: center;
