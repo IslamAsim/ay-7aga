@@ -1,13 +1,31 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
-
 html{
   height: 100vh;
   width: 100vw;
 }
 body{
-  background-image: url("/images/cool-background (2).png");
+  background-image: url("/images/bannerMorning.jpg");
   background-size: cover;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $menu-icon-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  $hover-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $menu-icon-color;
 }

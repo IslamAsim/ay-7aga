@@ -8,20 +8,51 @@
     <title>Yalla Feen</title>
 </head>
 <body>
-<nav>
+<nav class="container-fluid">
     <div class="nav-wrapper">
         <a href="#" class="logo">
             <img src="images/yalla%20feen%20logo1.png" alt="logo">
         </a>
+        <button class="search-component btn btn-secondary">
+            <span class="span-style pr-2 pl-2">Find your trip</span>
+            <span class="icon-search-wrapper">
+                <i class="fas fa-search icon-change "></i>
+            </span>
+        </button>
         <div class="mobile-list-icon" id="navIcon">
             <div class="a"></div>
             <div class="b"></div>
             <div class="c"></div>
         </div>
     </div>
+    <section class="search-form container">
+        <div class="wrapper mt-3">
+            <span class="search-field">
+                <label for="inputLocation">Location</label>
+                <input type="text" id="inputLocation" class="" placeholder="Where are you going?">
+            </span>
+            <span class="search-field">
+                <label for="inputBudget">Cost</label>
+                <input type="number" id="inputBudget" class="" placeholder="What is your budget">
+            </span>
+            <span class="search-field">
+                <label for="inputCategory">Category</label>
+                <input type="text" id="inputCategory" class="" placeholder="Choose category..">
+            </span>
+            <span class="search-field search-last">
+                <span class="wrapper">
+                    <label for="inputGuests">Guests</label>
+                <input type="text" id="inputGuests" class="" placeholder="who's your company?">
+                </span>
+                <button class="icon-search-wrapper">
+                <i class="fas fa-search"></i>
+                </button>
+            </span>
+        </div>
+    </section>
     <section class="menu-mobile-list" id="navOpen">
         <a class=" about item-style" href="#">
-            <img src="images/yalla%20feen%20logo1.png" alt="logo">        </a>
+            <img src="images/yalla%20feen%20logo1.png" alt="logo"> </a>
         <a class=" services item-style" href="sign_up.html">Products</a>
         <a class=" place-order item-style" href="./custom_trip.html">BLOG</a>
         <a class=" faqs item-style" href="./review.html">FAQS</a>
@@ -30,23 +61,22 @@
     </section>
 </nav>
 <section class="home-cards container">
-    <div class="card">
+    <a class="card" href="/trending.html">
         <div class="imgBx">
             <img class="img-hover" src="images/u1.jpg" alt="images">
         </div>
         <div class="details">
-            <h2>Ready Made Packages<br><span>Travel now</span></h2>
+            <h2>trending places<br><span>enjoy your day</span></h2>
         </div>
-    </div>
-    <div class="card">
+    </a>
+    <a href="/custom_trip.html" class="card">
         <div class="imgBx">
-            <img  class="img-hover" src="images/u2.jpg" alt="images">
+            <img class="img-hover" src="images/u2.jpg" alt="images">
         </div>
         <div class="details">
-            <h2>Customize Your Package<br><span>Where are you going</span></h2>
+            <h2>Customize Your Package<br><span>find out your best trip</span></h2>
         </div>
-    </div>
+    </a>
 </section>
-
 </body>
 </html>

@@ -95,6 +95,10 @@ module.exports = {
 			filename: "custom_trip.html",
 			template: path.resolve(__dirname,'./custom_trip.html')
 		}),
+		new HtmlWebpackPlugin({
+			filename: "trending.html",
+			template: path.resolve(__dirname,'./trending.html')
+		}),
 	],
 	// devtool: 'source-map', // ModySwitch
 	devtool: 'cheap-module-eval-source-map',
