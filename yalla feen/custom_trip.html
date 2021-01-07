@@ -9,10 +9,10 @@
     <title>Yalla Feen</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="body-customTrip">
     <nav>
         <div class="nav-wrapper">
             <a href="#" class="logo">
@@ -57,38 +57,51 @@
     </nav>
 
 
-    <section class="container login-component">
+    <section class="container customTrip-component">
         <form action="" method="post">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <label for="InputEmail">Email address</label>
-                        <small><a href="">Create a new account</a></small>
-                        <input type="email" class="form-control" id="InputEmail" placeholder="Enter your email address">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
+            <h2 class="text-center">Custom Trip</h2>
+            <div class="form-group">
+                <label for="InputCategorgy">Categorgy</label>
+                <input type="text" class="form-control" id="InputCategorgy" placeholder="Choose categorgy">
+            </div>
+            <div class="form-group">
+                <label for="InputLocation">Location</label>
+                <input type="text" class="form-control" id="InputLocation" placeholder="City">
+            </div>
+            <div class="form-group">
+                <label for="InputTags">Tags</label>
+                <input type="text" class="form-control" id="InputTags" placeholder="Tags">
+            </div>
+            <div class="form-group">
+                <label for="InputVisitor">Visitor type</label>
+                <input type="text" class="form-control" id="InputVisitor" placeholder="individually, friends or family">
+            </div>
+            <div class="form-group">
+                <label for="InputPrice">Price budget range</label>
+                <div class="row">
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="InputPrice" placeholder="Min">
                     </div>
-                    <div class="form-group">
-                        <label for="InputPassword1">Password</label>
-                        <input type="password" class="form-control" id="InputPassword"
-                            placeholder="Enter your password">
-                        <small><a href="">Forgot your password?</a></small>
-
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="InputMaxPrice" placeholder="Max">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <button type="button" class="login-google btn btn-danger"><i class="fab fa-google"></i> Login using
-                        Google</button>
-                    <button type="button" class="login-facebook btn btn-primary"><i class="fab fa-facebook"></i> Login
-                        using Facebook</button>
+            <div class="form-group">
+                <label for="InputDate">Date</label>
+                <div class="row">
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="InputDate" placeholder="Start">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" id="InputMaxDate" placeholder="To">
+                    </div>
                 </div>
             </div>
             <br>
             <div class="row">
-                <div class="col-2">
-                    <button type="submit" class="d-block login btn btn-primary">Log in</button>
+                <div class="col-8">
+                    <button type="submit" class="d-block find btn btn-primary">Find</button>
                 </div>
             </div>
 

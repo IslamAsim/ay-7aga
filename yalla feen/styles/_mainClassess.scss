@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  display: block;
+  font-weight: bolder;
+}
+
+input {
+  padding: 0 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid darkgray;
+}
