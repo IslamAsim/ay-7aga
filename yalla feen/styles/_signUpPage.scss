@@ -1,12 +1,6 @@
 
 .sign-up-component {
     form {
-        background-image: url("/images/Shape-1.png"), url("/images/Shape.png");
-        background-repeat: no-repeat, no-repeat;
-        background-position: left top, right top;
-        background-size: contain, cover;
-        margin-top: 10%;
-
         input {
             border-radius: 25px;
         }

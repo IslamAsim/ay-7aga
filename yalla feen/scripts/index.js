@@ -7,6 +7,7 @@ window.$ = $;
 
 $('#navIcon').on('click',function () {
     $('#navOpen').toggleClass('active');
-    $(this).toggleClass('menu-open')
+    $(this).toggleClass('menu-open');
+    $(".logo").toggleClass('deactivate');
 });
 

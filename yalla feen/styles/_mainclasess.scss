@@ -3,22 +3,11 @@
   padding: 0;
 }
 
-ul {
-  list-style: none;
-}
 html{
   height: 100vh;
   width: 100vw;
 }
-label {
-  display: block;
-  font-weight: bolder;
-}
-
-input {
-  padding: 0 10px;
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid darkgray;
+body{
+  background-image: url("/images/cool-background (2).png");
+  background-size: cover;
 }

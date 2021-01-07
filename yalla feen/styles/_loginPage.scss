@@ -1,8 +1,4 @@
-body {
-    background-image: url("/images/Shape-1.png"), url("/images/Shape.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: left top, right top, right bottom;
-    background-size: contain, cover;
+
     .login-component {
         form {
             margin-top: 10%;
@@ -36,4 +32,3 @@ body {
             
         }
     }
-}
