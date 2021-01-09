@@ -8,8 +8,9 @@ html{
   width: 100vw;
 }
 body{
-  background-image: url("/images/bannerMorning.jpg");
+  background-image: url("/images/33001465-fcf4-48ab-93b0-14577909acd5.jpg");
   background-size: cover;
+  background-position: 50% 100%;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -28,4 +29,15 @@ body{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $menu-icon-color;
+}
+.btn-primary{
+  border: none;
+  background-color: $hover-color;
+  &:hover{
+    background-color: $hover-color;
+  }
+  &:focus{
+    border: none;
+    background-color: $hover-color;
+  }
 }

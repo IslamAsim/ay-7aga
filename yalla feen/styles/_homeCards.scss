@@ -3,7 +3,6 @@
   align-items: flex-end;
   width: 100vw;
   height: 100vh;
-
   .row-wrapper {
     background-color: $overlay-color;
     padding-top: 20px;
@@ -23,7 +22,7 @@
 
         .favorite {
           font-size: 20px;
-          color: $favorite;
+          color: $hover-color;
           position: absolute;
           z-index: 10;
           top: 10px;
@@ -45,9 +44,10 @@
           }
 
         }
-
         .card-body {
+          background-color: $wheat;
           .wrapper {
+            color: $hover-color;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -88,6 +88,7 @@
     }
 
     .details {
+
       h2 {
         color: $menu-icon-color !important;
       }

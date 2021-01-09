@@ -103,15 +103,19 @@ nav {
   }
 
   .search-form {
-    //display: none;
     height: 0;
     overflow: hidden;
     width: 100vw;
     transition: all 0.4s;
     &.active{
       height: 86px;
+      &.wrapper{
+
+      }
+
     }
     .wrapper {
+      border: 1px $hover-color solid;
       display: flex;
       height: 66px;
       width: fit-content;
@@ -154,10 +158,20 @@ flex-direction: row;
         justify-content: space-between;
         align-items: center;
         .wrapper{
+          border: none;
           display: flex;
           flex-direction: column;
           text-align: center;
+          label{
+            margin: 0;
+            padding: 0;
+          }
+          input{
+            margin: 0;
+            padding: 0;
+          }
         }
+
         .icon-search-wrapper {
           border: none;
           display: flex;
