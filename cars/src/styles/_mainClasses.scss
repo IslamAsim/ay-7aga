@@ -19,3 +19,21 @@ a:active {
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $menu-icon-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  $hover-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $menu-icon-color;
+}
