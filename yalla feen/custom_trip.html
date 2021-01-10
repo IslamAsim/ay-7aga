@@ -9,48 +9,58 @@
     <title>Yalla Feen</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="147.309" height="46.97" viewBox="0 0 147.309 46.97">
-                    <path id="Path_892" data-name="Path 892"
-                        d="M2836.691,2366.234s7.764,6.66,15.9,6.405c1.3-.04,5.487-.106,6.788-.582,8.619-3.154,2.948-12.519,2.948-12.519a23.913,23.913,0,0,1,0,26.4,62.957,62.957,0,0,1-21.793,20.574s11.856-10.505,10.9-20.574S2836.691,2366.234,2836.691,2366.234Z"
-                        transform="translate(-2836.691 -2359.538)" fill="#35536b" />
-                    <ellipse id="Path_895" data-name="Path 895" cx="6.17" cy="5.17" rx="6.17" ry="5.17"
-                        transform="translate(8.589 0.122)" fill="#35536b" />
-                    <text id="alla_feen" data-name="alla feen" transform="translate(33.309 32.795)" fill="#35536b"
-                        font-size="26.667" font-family="CooperBlack, Cooper">
-                        <tspan x="0" y="0">alla feen</tspan>
-                    </text>
-                </svg>
-            </a>
-            <div class="mobile-list-icon" id="navIcon">
-                <div class="a"></div>
-                <div class="b"></div>
-                <div class="c"></div>
-            </div>
+<nav class="container-fluid">
+    <div class="nav-wrapper">
+        <a href="#" class="logo">
+            <img src="images/yalla%20feen%20logo1.png" alt="logo">
+        </a>
+        <button class="search-component btn btn-secondary">
+            <span class="span-style pr-2 pl-2">Find your trip</span>
+            <span class="icon-search-wrapper">
+                <i class="fas fa-search icon-change "></i>
+            </span>
+        </button>
+        <div class="mobile-list-icon" id="navIcon">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
         </div>
-        <section class="menu-mobile-list" id="navOpen">
-            <a class=" about item-style" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="147.309" height="46.97" viewBox="0 0 147.309 46.97">
-                    <path id="Path_892" data-name="Path 892"
-                        d="M2836.691,2366.234s7.764,6.66,15.9,6.405c1.3-.04,5.487-.106,6.788-.582,8.619-3.154,2.948-12.519,2.948-12.519a23.913,23.913,0,0,1,0,26.4,62.957,62.957,0,0,1-21.793,20.574s11.856-10.505,10.9-20.574S2836.691,2366.234,2836.691,2366.234Z"
-                        transform="translate(-2836.691 -2359.538)" fill="#35536b" />
-                    <ellipse id="Path_895" data-name="Path 895" cx="6.17" cy="5.17" rx="6.17" ry="5.17"
-                        transform="translate(8.589 0.122)" fill="#35536b" />
-                    <text id="alla_feen" data-name="alla feen" transform="translate(33.309 32.795)" fill="#35536b"
-                        font-size="26.667" font-family="CooperBlack, Cooper">
-                        <tspan x="0" y="0">alla feen</tspan>
-                    </text>
-                </svg>
-            </a>
-            <a class=" services item-style" href="#">Products</a>
-            <a class=" place-order item-style" href="#">BLOG</a>
-            <a class=" faqs item-style" href="#">FAQS</a>
-            <a class=" blog item-style" href="#">Login</a>
-            <a class=" contact item-style" href="#">CONTACT US</a>
-        </section>
-    </nav>
+    </div>
+    <section class="search-form container">
+        <div class="wrapper mt-3">
+            <span class="search-field">
+                <label for="inputLocation">Location</label>
+                <input type="text" id="inputLocation" class="" placeholder="Where are you going?">
+            </span>
+            <span class="search-field">
+                <label for="inputBudget">Cost</label>
+                <input type="number" id="inputBudget" class="" placeholder="What is your budget">
+            </span>
+            <span class="search-field">
+                <label for="inputCategory">Category</label>
+                <input type="text" id="inputCategory" class="" placeholder="Choose category..">
+            </span>
+            <span class="search-field search-last">
+                <span class="wrapper">
+                    <label for="inputGuests">Guests</label>
+                <input type="text" id="inputGuests" placeholder="who's your company?">
+                </span>
+                <button class="icon-search-wrapper">
+                <i class="fas fa-search"></i>
+                </button>
+            </span>
+        </div>
+    </section>
+    <section class="menu-mobile-list" id="navOpen">
+        <a class=" about item-style" href="#">
+            <img src="images/yalla%20feen%20logo1.png" alt="logo"> </a>
+        <a class=" services item-style" href="sign_up.html">Products</a>
+        <a class=" place-order item-style" href="./custom_trip.html">BLOG</a>
+        <a class=" faqs item-style" href="./review.html">FAQS</a>
+        <a class=" blog item-style" href="./login.html">Login</a>
+        <a class=" contact item-style" href="#">CONTACT US</a>
+    </section>
+</nav>
     <section class="container customTrip-component">
         <form action="" method="post">
             <h2 class="text-center">Custom Trip</h2>
