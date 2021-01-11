@@ -103,6 +103,10 @@ module.exports = {
 			filename: "agent_profile.html",
 			template: path.resolve(__dirname,'./agent_profile.html')
 		}),
+		new HtmlWebpackPlugin({
+			filename: "aboutus.html",
+			template: path.resolve(__dirname,'./aboutus.html')
+		}),
 	],
 	// devtool: 'source-map', // ModySwitch
 	devtool: 'cheap-module-eval-source-map',
