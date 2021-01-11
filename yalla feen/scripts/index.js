@@ -10,7 +10,8 @@ $('#navIcon').on('click', function () {
     $('#navOpen').toggleClass('active');
     $(this).toggleClass('menu-open');
     $(".logo").toggleClass('deactivate');
-    $('.search-component').toggleClass('menu-open')
+    $('.search-component').toggleClass('menu-open');
+    $('.search-form').toggleClass('menu-open');
 });
 
 $('.favorite-event').on('click', function () {

@@ -3,6 +3,7 @@ nav {
   width: 100%;
   top: 20px;
   z-index: 1000;
+
   .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -29,29 +30,36 @@ nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      transition:width 0.4s ;
-      &.active{
+      transition: width 0.4s;
+
+      &.active {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
         width: 48px;
         overflow: hidden;
-        .span-style{
+
+        .span-style {
           display: none;
         }
-        .icon-search-wrapper{
+
+        .icon-search-wrapper {
           font-size: 18px;
         }
       }
-      &.menu-open{
+
+      &.menu-open {
         display: none;
+
       }
+
       .span-style {
         opacity: 1;
         white-space: nowrap;
-        transition:display 0.4s 0.2s,opacity 0.1s;
+        transition: display 0.4s 0.2s, opacity 0.1s;
       }
+
       .icon-search-wrapper {
         display: flex;
         justify-content: center;
@@ -72,9 +80,8 @@ nav {
       outline: none;
       display: block;
       transition: all 500ms;
-
       div {
-        background-color: $menu-icon-color;
+        background-color: $hover-color;
         width: 23px;
         height: 4px;
         transition: transform 800ms, background-color 2s;
@@ -91,12 +98,12 @@ nav {
 
         .a {
           transform: rotate(45deg) translate(9px, 6px);
-          background-color: $menu-icon-color;
+          background-color: $wheat;
         }
 
         .c {
           transform: rotate(-45deg) translateY(4px);
-          background-color: $menu-icon-color;
+          background-color: $wheat;
         }
       }
     }
@@ -107,13 +114,17 @@ nav {
     overflow: hidden;
     width: 100vw;
     transition: all 0.4s;
-    &.active{
+    &.menu-open {
+display: none;
+    }
+    &.active {
       height: 86px;
-      &.wrapper{
 
+      &.wrapper {
       }
 
     }
+
     .wrapper {
       border: 1px $hover-color solid;
       display: flex;
@@ -122,6 +133,7 @@ nav {
       margin: 0 auto;
       background-color: $light-color;
       border-radius: 33px;
+
       .search-field {
         position: relative;
         display: flex;
@@ -130,18 +142,24 @@ nav {
         height: 66px;
         border-radius: 33px;
         text-align: center;
+        transition: all 0.3s;
+
         &:hover {
+          border: 1px $hover-color solid;
           box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
         }
+
         input {
           border: none;
           text-align: center;
         }
+
         label {
           font-weight: 500;
           padding-top: 5px;
         }
-        &:not(:last-child):after{
+
+        &:not(:last-child):after {
           display: inline-block;
           content: "";
           position: absolute;
@@ -152,21 +170,29 @@ nav {
           top: 15px;
         }
       }
-      .search-last{
+
+      .search-last {
         padding: 0 15px;
-flex-direction: row;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        .wrapper{
+
+        .wrapper {
           border: none;
           display: flex;
+          height: 54px;
+          margin-top: 8px;
+          margin-bottom: 4px;
           flex-direction: column;
           text-align: center;
-          label{
+          justify-content: space-between;
+
+          label {
             margin: 0;
             padding: 0;
           }
-          input{
+
+          input {
             margin: 0;
             padding: 0;
           }
@@ -217,10 +243,11 @@ flex-direction: row;
       width: 100%;
       height: 60px;
       justify-content: center;
-      color: $menu-icon-color;
+      color: $wheat;
 
       &:hover {
         background-color: $wheat;
+        color: $hover-color;
       }
     }
   }
