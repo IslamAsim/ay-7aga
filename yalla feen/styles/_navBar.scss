@@ -80,6 +80,7 @@ nav {
       outline: none;
       display: block;
       transition: all 500ms;
+
       div {
         background-color: $hover-color;
         width: 23px;
@@ -115,10 +116,14 @@ nav {
     width: 100vw;
     transition: all 0.4s;
     &.menu-open {
-display: none;
+      display: none;
     }
     &.active {
       height: 86px;
+      @include medium-screen {
+        overflow: auto;
+        height: 400px;
+      }
 
       &.wrapper {
       }
@@ -133,6 +138,10 @@ display: none;
       margin: 0 auto;
       background-color: $light-color;
       border-radius: 33px;
+      @include medium-screen {
+        margin: 10px auto;
+        flex-direction: column;
+      }
 
       .search-field {
         position: relative;
@@ -143,6 +152,9 @@ display: none;
         border-radius: 33px;
         text-align: center;
         transition: all 0.3s;
+        @include medium-screen {
+          background-color: $light-color;
+        }
 
         &:hover {
           border: 1px $hover-color solid;
@@ -168,6 +180,9 @@ display: none;
           background-color: lightgrey;
           height: 36px;
           top: 15px;
+          @include medium-screen{
+            display: none;
+          }
         }
       }
 

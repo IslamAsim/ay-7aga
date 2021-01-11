@@ -8,6 +8,8 @@ html{
   width: 100vw;
 }
 body{
+  padding-bottom: 25px;
+  padding-top: 85px;
   background-image: url("/images/33001465-fcf4-48ab-93b0-14577909acd5.jpg");
   background-size: cover;
   background-position: 50% 100%;
@@ -19,7 +21,7 @@ body{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: $menu-icon-color;
+  background: transparent;
 }
 
 /* Handle */
