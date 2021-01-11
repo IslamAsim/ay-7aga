@@ -4,6 +4,7 @@
 @import "styles/mixins";
 @import "styles/mainClasses";
 @import "~@ng-select/ng-select/themes/default.theme.css";
+
 nav {
   .nav-wrapper {
     position: fixed;
@@ -12,6 +13,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     z-index: 1100;
+
     .mobile-list-icon {
       cursor: pointer;
       width: 23px;
@@ -25,6 +27,7 @@ nav {
         width: 23px;
         height: 4px;
         transition: transform 800ms, background-color 2s;
+
         &:not(:last-child) {
           margin-bottom: 4px;
         }
@@ -84,6 +87,7 @@ nav {
     }
   }
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -91,13 +95,16 @@ footer {
   width: 100%;
   transform: translateY(0);
   transition: transform 500ms;
+
   &.nav-open {
     transform: translateY(100%);
   }
+
   .footer-wrapper {
     padding-top: 31px;
     padding-bottom: 20px;
     background-image: url($dark-pattern);
+
     &:before {
       display: block;
       content: "";
@@ -107,14 +114,17 @@ footer {
       position: absolute;
       height: 15px;
     }
-    .carBrands{
-      width:100%;
+
+    .carBrands {
+      width: 100%;
     }
   }
 }
+
 .home-header {
   background-image: url($body-pattern);
   color: $font-dark;
+
   .home {
     height: 100vh;
     display: flex;
@@ -148,6 +158,7 @@ footer {
     }
   }
 }
+
 //login form style
 .login-component {
   display: flex;
@@ -202,6 +213,101 @@ footer {
       transform: rotate(180deg);
       right: -1px;
       height: 100%;
+    }
+  }
+}
+.profile-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url($body-pattern);
+  width: 100%;
+  height: 100vh;
+
+  .profile-wrapper {
+    position: relative;
+    background-image: url($dark-pattern);
+
+    &:before {
+      display: block;
+      content: "";
+      background-image: url($white-pattern-style-top);
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      height: 15px;
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      background-image: url($white-pattern-style-top);
+      width: 100%;
+      left: 0;
+      transform: rotate(180deg);
+      bottom: -1px;
+      position: absolute;
+      height: 15px;
+    }
+
+    .right-style {
+      position: absolute;
+      background-image: url($white-pattern-style-side);
+      width: 15px;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+
+    .left-style {
+      position: absolute;
+      background-image: url($white-pattern-style-side);
+      width: 15px;
+      top: 0;
+      transform: rotate(180deg);
+      right: -1px;
+      height: 100%;
+    }
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+    .customDiv{
+      border-style: ridge;
     }
   }
 }
