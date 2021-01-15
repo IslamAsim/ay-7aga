@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
   IsNavOpen: boolean = false;
-  IsSearchOpen: boolean = false;
+  IsSearchOpen: boolean = true;
 
   constructor() {
   }

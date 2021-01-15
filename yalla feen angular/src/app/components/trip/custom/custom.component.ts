@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./custom.component.scss']
 })
 export class CustomComponent implements OnInit {
+  VisitorType = ['Individually', 'Friends', 'Family'];
 
   constructor() { }
 

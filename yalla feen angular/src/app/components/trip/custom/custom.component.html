@@ -15,7 +15,14 @@
     </div>
     <div class="form-group">
       <label for="InputVisitor">Visitor type</label>
-      <input type="text" class="form-control" id="InputVisitor" placeholder="individually, friends or family">
+      <ng-select [items]="VisitorType"
+                 bindLabel="Visitor type"
+                 [virtualScroll]="true"
+                 bindValue="InputVisitor"
+                 id="InputVisitor"
+                 appendTo="body"
+                 placeholder="individually, friends or family.... ">
+      </ng-select>
     </div>
     <div class="form-group">
       <label for="InputPrice">Price budget range</label>
