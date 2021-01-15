@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -65,8 +64,8 @@
         <form action="" method="post">
             <h2 class="text-center">Custom Trip</h2>
             <div class="form-group">
-                <label for="InputCategorgy">Categorgy</label>
-                <input type="text" class="form-control" id="InputCategorgy" placeholder="Choose categorgy">
+                <label for="InputCategoryAdvanced">Category</label>
+                <input type="text" class="form-control" id="InputCategoryAdvanced" placeholder="Choose category">
             </div>
             <div class="form-group">
                 <label for="InputLocation1">Location</label>
@@ -86,20 +85,20 @@
                     <div class="col-4">
                         <input type="text" class="form-control" id="InputPrice" placeholder="Min">
                     </div>
-                    <div class="col-4">
-                        <input type="text" class="form-control" id="InputMaxPrice" placeholder="Max">
-                    </div>
+                    <label class="col-4" for="InputMaxPrice">
+                        <input type="number" class="form-control" id="InputMaxPrice" placeholder="Max">
+                    </label>
                 </div>
             </div>
             <div class="form-group">
-                <label for="InputDate">Date</label>
+                <label for="InputDate">Time</label>
                 <div class="row">
                     <div class="col-4">
                         <input type="text" class="form-control" id="InputDate" placeholder="Start">
                     </div>
-                    <div class="col-4">
+                    <label class="col-4" for="InputMaxDate">
                         <input type="text" class="form-control" id="InputMaxDate" placeholder="To">
-                    </div>
+                    </label>
                 </div>
             </div>
             <br>
@@ -108,8 +107,6 @@
                     <button type="submit" class="d-block find btn btn-primary">Find</button>
                 </div>
             </div>
-
-
         </form>
     </section>
 </body>
